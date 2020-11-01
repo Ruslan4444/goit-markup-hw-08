@@ -1,4 +1,4 @@
-.header a {
+.navigation a {
   display: inline-block;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -9,6 +9,10 @@
 }
 .site-nav {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   &-item:not(:last-child) {
     margin-right: 50px;
@@ -47,8 +51,4 @@
       background-color: $accent-color;
     }
   }
-}
-
-.contacts-items:not(:last-child) {
-  margin-right: 30px;
 }

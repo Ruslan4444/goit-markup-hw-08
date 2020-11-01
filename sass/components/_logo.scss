@@ -1,6 +1,8 @@
 .logo {
-  margin-right: 93px;
-
+  margin-right: 88px;
+  @media screen and (min-width: 1140) {
+    margin-right: 93px;
+  }
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
