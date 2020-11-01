@@ -1,0 +1,16 @@
+.header-portfolio {
+  border-bottom: $header-border-bottom 1px solid;
+
+  & a {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    & .contacts-item {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}
+@import './header';

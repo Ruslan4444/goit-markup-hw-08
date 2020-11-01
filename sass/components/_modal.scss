@@ -1,0 +1,159 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: $white-background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    padding: 6px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $white-text-color;
+      cursor: pointer;
+      outline: none;
+    }
+    &:hover > .modal-svg-icon {
+      fill: $accent-color;
+    }
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  &-field {
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.01em;
+    color: $description-text-color;
+
+    &-wrapper {
+      display: block;
+      position: relative;
+    }
+  }
+  &-message::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &-title {
+    margin-bottom: 12px;
+
+    font-weight: $font-weight-title;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+
+    color: $black-text-color;
+  }
+  &-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus + .modal-form-svg-icon {
+      fill: $accent-color;
+    }
+  }
+  &-input:focus,
+  &-message:focus {
+    border: 1px solid $accent-color;
+    cursor: pointer;
+    outline: none;
+  }
+  &-svg-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 12px;
+    transform: translateY(-50%);
+  }
+  &-message {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    margin-top: 4px;
+    padding: 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-policy-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 16px;
+      height: 15px;
+      outline: 1px solid #212121;
+      margin-right: 8px;
+    }
+  }
+  &-policy-link {
+    display: block;
+    margin-left: 4px;
+    color: $accent-color;
+  }
+  &-policy:checked + &-policy-label::before {
+    background-image: url(../images/modal-img/icon-check.svg);
+  }
+  &-btn {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white-text-color;
+    padding: 10px 55px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
