@@ -1,4 +1,4 @@
-.logo {
+/ .logo {
   margin-right: 93px;
 
   font-family: $secondary-font;
@@ -18,3 +18,24 @@
 .footer-logo {
   color: $white-text-color;
 }
+
+// .logo {
+//   margin-right: 93px;
+
+//   font-family: $secondary-font;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.192;
+//   letter-spacing: 0.03em;
+//   color: $accent-color;
+
+//   .footer & {
+//     margin-right: 0px;
+//   }
+// }
+// .header-logo {
+//   color: $black-text-color;
+// }
+// .footer-logo {
+//   color: $white-text-color;
+// }

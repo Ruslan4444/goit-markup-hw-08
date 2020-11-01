@@ -16,53 +16,75 @@ body {
 .link {
   text-decoration: none;
 }
+
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-  .clients & {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    text-align: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  .features & {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-  .footer & {
-    display: flex;
-    align-items: baseline;
-    justify-items: center;
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
   }
+
   .header & {
     display: flex;
     align-items: center;
   }
-  .specialization & {
-    padding-bottom: 94px;
-  }
-  .ourteam & {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .header-portfolio & {
-    display: flex;
-    align-items: center;
-  }
-  & .work {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .works & {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  & .work {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
+// .container {
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin: auto;
+
+//   .clients & {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//     text-align: center;
+//   }
+//   .features & {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+//   .footer & {
+//     display: flex;
+//     align-items: baseline;
+//     justify-items: center;
+//   }
+//   .header & {
+//     display: flex;
+//     align-items: center;
+//   }
+//   .specialization & {
+//     padding-bottom: 94px;
+//   }
+//   .ourteam & {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+//   .header-portfolio & {
+//     display: flex;
+//     align-items: center;
+//   }
+//   & .work {
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+//   .works & {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//   }
+//   & .work {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
