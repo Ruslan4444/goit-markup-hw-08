@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 768px) (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     display: block;
     margin-left: 84px;
     .contacts-items:not(:last-child) {
@@ -53,7 +53,7 @@
     margin-right: 8px;
     fill: currentColor;
 
-    @media screen and (min-width: 1140px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 10px;
     }
   }
