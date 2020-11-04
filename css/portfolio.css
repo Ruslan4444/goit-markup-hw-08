@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -375,6 +375,12 @@ body {
   padding: 20px;
   text-align: center;
   font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu {

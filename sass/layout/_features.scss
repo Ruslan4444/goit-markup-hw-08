@@ -2,7 +2,7 @@
   background-color: $white-background-color;
 
   &-list {
-    display: flex;
+    display: block;
   }
   &-items {
     &::before {

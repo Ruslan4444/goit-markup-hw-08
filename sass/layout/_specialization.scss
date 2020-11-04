@@ -2,8 +2,12 @@
   background-color: $white-background-color;
 
   &-list {
-    display: flex;
+    display: none;
     justify-content: space-between;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   &-title {
     margin-bottom: 50px;
