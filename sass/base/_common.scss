@@ -49,9 +49,12 @@ body {
   .footer & {
     display: block;
     padding-bottom: 60px;
-    // display: flex;
-    // align-items: baseline;
-    // justify-items: center;
+    padding-top: 60px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-items: center;
+    }
   }
   .header & {
     display: flex;

@@ -1,7 +1,5 @@
 .footer {
-  padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: $footer-background-color;
 
   &-social-title {
@@ -19,15 +17,20 @@
     fill: $white-background-color;
   }
   & .link:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   &-subscribe {
     display: block;
     text-align: center;
-
     width: 480px;
     height: 86px;
-    margin: 0;
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      text-align: unset;
+      width: 358px;
+      margin: unset;
+    }
   }
 
   &-subscribe-title {
@@ -46,6 +49,9 @@
   &-contacts,
   .social-contacts {
     display: block;
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+    }
   }
   &-social-list {
     display: flex;
@@ -53,6 +59,9 @@
     justify-content: center;
     margin: 0px auto;
     margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin: unset;
+    }
   }
   &-social-link {
     display: flex;
@@ -74,14 +83,38 @@
 }
 .footer-social-contacts {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: unset;
+    margin: unset;
+    margin-right: 93px;
+  }
 }
 .footer-contacts {
   text-align: center;
-  margin: 0px auto;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    text-align: center;
+    margin: 0px auto;
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: unset;
+    margin-left: 0;
+    margin-right: 70px;
+  }
 }
 .adress-links {
-  align-items: center;
-  margin: 0px auto;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    margin: 0px auto;
+  }
 }
 .adress {
   margin-top: 20px;
@@ -89,9 +122,7 @@
   &-links {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
     margin-bottom: 60px;
   }
   &-map:hover,

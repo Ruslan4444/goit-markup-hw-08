@@ -1,14 +1,23 @@
 .subscribe-form {
   display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0px auto;
+  }
 
   &-input {
     display: flex;
     align-items: center;
-    width: 450px;
+    width: 358px;
     height: 50px;
     padding: 15px 16px;
     margin: 0 auto;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+      width: 750px;
+    }
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
