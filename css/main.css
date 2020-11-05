@@ -754,17 +754,18 @@ body {
 
 .specialization {
   background-color: #ffffff;
-}
-
-.specialization-list {
   display: none;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
-  .specialization-list {
-    display: flex;
+  .specialization {
+    display: unset;
   }
+}
+
+.specialization-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .specialization-title {

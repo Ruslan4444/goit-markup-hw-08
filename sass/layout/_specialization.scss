@@ -1,13 +1,14 @@
 .specialization {
   background-color: $white-background-color;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: unset;
+  }
 
   &-list {
-    display: none;
+    display: flex;
     justify-content: space-between;
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-    }
   }
   &-title {
     margin-bottom: 50px;
