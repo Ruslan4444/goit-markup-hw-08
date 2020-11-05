@@ -17,7 +17,6 @@ body {
   text-decoration: none;
 }
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -40,8 +39,10 @@ body {
     text-align: center;
   }
   .features & {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin: 60px auto;
+
+    // padding-top: 94px;
+    // padding-bottom: 94px;
   }
   .footer & {
     display: block;
