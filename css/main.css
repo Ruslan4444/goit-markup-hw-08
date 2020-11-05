@@ -954,28 +954,48 @@ body {
 }
 
 .clients-list {
-  display: block;
+  display: flex;
   align-items: center;
   color: #afb1b8;
 }
 
-.clients-list-item {
-  display: flex;
-  margin-right: 30px;
+@media screen and (min-width: 320px) {
+  .clients-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+.clients-list-item {
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients-link {
-  width: 170px;
-  height: 90px;
   color: #afb1b8;
   align-items: center;
   justify-items: center;
   border: 1px solid currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) {
+  .clients-link {
+    width: 210px;
+    height: 90px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
 }
 
 .clients-link:hover, .clients-link:focus {

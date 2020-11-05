@@ -10,22 +10,35 @@
     color: $black-text-color;
   }
   &-list {
-    display: block;
+    display: flex;
     align-items: center;
     color: $icon-color;
 
+    @media screen and (min-width: 320px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     &-item {
       display: flex;
-      margin-right: 30px;
 
-      &:not(:last-child) {
-        margin-right: 30px;
+      @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
       }
     }
   }
   &-link {
-    width: 170px;
-    height: 90px;
+    @media screen and (min-width: 320px) {
+      width: 210px;
+      height: 90px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+
     color: $icon-color;
     align-items: center;
     justify-items: center;
