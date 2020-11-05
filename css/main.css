@@ -66,6 +66,7 @@ body {
 
 .footer .container {
   display: block;
+  padding-bottom: 60px;
 }
 
 .header .container {
@@ -402,16 +403,17 @@ body {
 }
 
 .subscribe-form {
-  display: flex;
+  display: block;
 }
 
 .subscribe-form-input {
   display: flex;
   align-items: center;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -440,6 +442,7 @@ body {
   width: 200px;
   height: 50px;
   padding: 10px 29px;
+  margin: 0 auto;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1035,13 +1038,14 @@ body {
 
 .footer-subscribe {
   display: block;
-  width: 570px;
+  text-align: center;
+  width: 480px;
   height: 86px;
-  margin-left: 93px;
+  margin: 0;
 }
 
 .footer-subscribe-title {
-  display: inline-block;
+  display: block;
   padding-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1053,13 +1057,15 @@ body {
 
 .footer-contacts,
 .footer .social-contacts {
-  display: inline-block;
+  display: block;
 }
 
 .footer-social-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0px auto;
+  margin-bottom: 60px;
 }
 
 .footer-social-link {
@@ -1078,14 +1084,31 @@ body {
   background-color: #2196f3;
 }
 
+.footer-social-contacts {
+  text-align: center;
+}
+
+.footer-contacts {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.adress-links {
+  align-items: center;
+  margin: 0px auto;
+}
+
 .adress {
   margin-top: 20px;
-  margin-right: 70px;
 }
 
 .adress-links {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .adress-map:hover, .adress-map:focus {
