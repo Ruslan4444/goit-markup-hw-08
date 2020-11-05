@@ -78,8 +78,15 @@ body {
 }
 
 .ourteam .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .ourteam .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .header-portfolio .container {
@@ -815,12 +822,21 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-items:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .team-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-list {
   display: block;
+}
+
+@media screen and (min-width: 768) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team-list-content {
@@ -861,6 +877,9 @@ body {
 
 .team-social-list {
   display: flex;
+  width: 206px;
+  height: 44px;
+  margin: 0px auto;
   justify-content: space-between;
 }
 
