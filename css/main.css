@@ -828,14 +828,21 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team-items {
+    margin-bottom: 30px;
+  }
+}
+
 .team-list {
   display: block;
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -845,6 +852,20 @@ body {
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list-content {
+    width: 354px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-content {
+    width: 270px;
+    margin-right: 0;
+  }
 }
 
 .team-title {
