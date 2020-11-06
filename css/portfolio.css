@@ -467,12 +467,20 @@ body {
 
 .menu {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .menu .list-items:not(:last-child) {
   margin-right: 8px;
+}
+
+.menu .list-items {
+  margin-bottom: 15px;
+}
+
+.menu .list-items:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
 }
 
 .list-button {
