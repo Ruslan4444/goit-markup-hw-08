@@ -177,7 +177,6 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     display: flex;
-    margin: 0px auto;
   }
 }
 
@@ -200,7 +199,7 @@ body {
 @media screen and (min-width: 1200px) {
   .subscribe-form-input {
     margin-right: 12px;
-    width: 750px;
+    width: 358px;
   }
 }
 
@@ -569,6 +568,9 @@ body {
     text-align: unset;
     width: 358px;
     margin: unset;
+  }
+  .footer-subscribe .footer-form {
+    display: flex;
   }
 }
 
