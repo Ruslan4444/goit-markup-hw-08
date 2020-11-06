@@ -483,6 +483,20 @@ body {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu {
+    flex-wrap: unset;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    margin-bottom: 34px;
+  }
+}
+
 .list-button {
   padding: 6px 22px;
   border-radius: 4px;
