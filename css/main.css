@@ -75,6 +75,7 @@ body {
     display: flex;
     align-items: baseline;
     justify-items: center;
+    padding-bottom: unset;
   }
 }
 
@@ -112,16 +113,20 @@ body {
 }
 
 .container .work {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .container .work {
+    display: block;
+  }
 }
 
 .works .container {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.container .work {
-  display: block;
 }
 
 .visually-hidden {
@@ -195,13 +200,20 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-button {

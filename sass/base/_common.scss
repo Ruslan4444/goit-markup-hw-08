@@ -54,6 +54,7 @@ body {
       display: flex;
       align-items: baseline;
       justify-items: center;
+      padding-bottom: unset;
     }
   }
   .header & {
@@ -82,22 +83,18 @@ body {
     align-items: center;
   }
   & .work {
-    display: block;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
 
-    // display: flex;
-    // flex-wrap: wrap;
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
   .works & {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  & .work {
-    display: block;
-
-    // display: flex;
-    // flex-wrap: wrap;
   }
 }
 
