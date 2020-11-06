@@ -1,10 +1,13 @@
+@import './header';
+
 .header-portfolio {
+  position: relative;
   border-bottom: $header-border-bottom 1px solid;
 
   & a {
     display: inline-block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
 
     & .contacts-item {
       display: flex;
@@ -13,4 +16,41 @@
     }
   }
 }
-@import './header';
+
+.menu-button {
+  display: inline-flex;
+  margin-left: auto;
+  border: none;
+
+  & .icon-close {
+    display: none;
+  }
+  &.is-open .icon-close {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    border: 0px;
+  }
+}
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: teal;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

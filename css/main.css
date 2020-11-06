@@ -107,7 +107,8 @@ body {
 }
 
 .header-portfolio .container {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .container .work {
