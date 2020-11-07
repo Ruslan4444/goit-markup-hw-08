@@ -1,31 +1,43 @@
 .navigation a {
-  display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  // display: block;
+  // display: inline-block;
+  // align-items: center;
+  // justify-content: center;
+  // padding-top: 15px;
+  // padding-bottom: 15px;
+  // margin: 0px auto;
 }
 .header .container {
   position: relative;
 }
+.navigation-menu {
+  display: block;
+
+  width: 99px;
+  height: 155px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+}
 .navigation {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0px auto;
 }
 .site-nav {
   display: block;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
   }
 
   &-item:not(:last-child) {
-    margin-right: 50px;
+    padding-bottom: 40px;
   }
+
   & .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
+    font-size: 18px;
+    line-height: 1.167;
     letter-spacing: 0.02em;
     color: $black-text-color;
 
@@ -38,6 +50,7 @@
   }
   & .link.current {
     color: $accent-color;
+    padding-bottom: 8px;
 
     position: relative;
 
@@ -61,11 +74,16 @@
   margin-left: auto;
   border: none;
 
+  &:hover {
+    fill: $accent-color;
+  }
+
   & .icon-close {
     display: none;
   }
   &.is-open .icon-close {
     display: block;
+    border: none;
   }
   &.is-open .icon-menu {
     display: none;
@@ -87,18 +105,18 @@
     top: 100%;
     left: 0;
     width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    width: 480px;
+    height: 453px;
 
-    height: 400px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open {
       display: block;
-      background-color: #fff;
-      width: 480px;
-      height: 453px;
-
-      background: #ffffff;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
-        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     }
   }
 
@@ -106,12 +124,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .contacts {
-      margin-left: auto;
-    }
-  }
-  & .contacts {
-    margin-left: auto;
   }
 }
 

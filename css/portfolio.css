@@ -253,9 +253,7 @@ body {
 
 .contacts {
   display: block;
-  margin-left: auto;
-  align-items: center;
-  justify-content: center;
+  margin: 0px auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -314,23 +312,26 @@ body {
   fill: currentColor;
 }
 
-.navigation a {
-  display: inline-block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 .header .container {
   position: relative;
 }
 
+.navigation-menu {
+  display: block;
+  width: 99px;
+  height: 155px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+}
+
 .navigation {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: 0px auto;
 }
 
 .site-nav {
   display: block;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -340,15 +341,13 @@ body {
 }
 
 .site-nav-item:not(:last-child) {
-  margin-right: 50px;
+  padding-bottom: 40px;
 }
 
 .site-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 18px;
+  line-height: 1.167;
   letter-spacing: 0.02em;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -360,6 +359,7 @@ body {
 
 .site-nav .link.current {
   color: #2196f3;
+  padding-bottom: 8px;
   position: relative;
 }
 
@@ -381,12 +381,17 @@ body {
   background-color: transparent;
 }
 
+.menu-button:hover {
+  fill: #2196f3;
+}
+
 .menu-button .icon-close {
   display: none;
 }
 
 .menu-button.is-open .icon-close {
   display: block;
+  border: none;
 }
 
 .menu-button.is-open .icon-menu {
@@ -411,15 +416,16 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 400px;
-  }
-  .menu-container.is-open {
-    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #fff;
     width: 480px;
     height: 453px;
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-container.is-open {
+    display: block;
   }
 }
 
@@ -429,13 +435,6 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .menu-container .contacts {
-    margin-left: auto;
-  }
-}
-
-.menu-container .contacts {
-  margin-left: auto;
 }
 
 .header-portfolio {
