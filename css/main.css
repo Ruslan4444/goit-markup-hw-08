@@ -1191,6 +1191,13 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-contacts,
+  .footer .social-contacts {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-contacts,
   .footer .social-contacts {
@@ -1210,6 +1217,13 @@ body {
   .footer-social-list {
     margin: unset;
   }
+}
+
+.footer-contact {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-social-link {
@@ -1234,8 +1248,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-social-contacts {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
   }
 }
@@ -1255,6 +1269,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer-contacts {
     display: inline-block;
+    align-items: center;
     text-align: center;
     margin: 0px auto;
     margin-right: 165px;
