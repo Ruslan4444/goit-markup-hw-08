@@ -6,8 +6,7 @@
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
-    padding-left: 60px;
-    padding-right: 60px;
+
     text-align: center;
     background-color: $hero-background-color;
     background-image: linear-gradient(
@@ -34,8 +33,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero/hero-tablet.jpg);
-    padding-left: 204px;
-    padding-right: 204px;
+
     background-size: cover;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
