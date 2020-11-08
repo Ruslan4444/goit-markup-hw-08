@@ -338,6 +338,10 @@ body {
   fill: currentColor;
 }
 
+.header .container {
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
   .navigation-menu {
     display: block;
