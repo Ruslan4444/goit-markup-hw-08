@@ -74,11 +74,13 @@
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
   }
   &-social-link {
     display: flex;
     align-items: center;
-    margin-right: 10px;
     justify-content: center;
     width: 44px;
     height: 44px;
@@ -93,6 +95,10 @@
     }
   }
 }
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-social-contacts {
   text-align: center;
   @media screen and (min-width: 768px) {

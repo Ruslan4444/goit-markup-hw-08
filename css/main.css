@@ -1241,10 +1241,15 @@ body {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-contact {
+    display: block;
+  }
+}
+
 .footer-social-link {
   display: flex;
   align-items: center;
-  margin-right: 10px;
   justify-content: center;
   width: 44px;
   height: 44px;
@@ -1255,6 +1260,10 @@ body {
 
 .footer-social-link:hover, .footer-social-link:focus {
   background-color: #2196f3;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-contacts {
