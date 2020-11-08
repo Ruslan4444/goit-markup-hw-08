@@ -543,10 +543,6 @@ body {
   color: #ffffff;
 }
 
-.header .container {
-  position: relative;
-}
-
 @media screen and (max-width: 767px) {
   .navigation-menu {
     display: block;
@@ -700,7 +696,6 @@ body {
 }
 
 .hero {
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -746,7 +741,6 @@ body {
     background-color: rgba(47, 48, 58, 0.4);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-deckstop.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
     background-size: cover;
   }
 }
