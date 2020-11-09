@@ -10,8 +10,10 @@
   & .list-items {
     margin-bottom: 15px;
   }
-  & .list-items:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
+  @media screen and (min-width: 480px) {
+    & .list-items:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
 @media screen and (min-width: 768px) {
