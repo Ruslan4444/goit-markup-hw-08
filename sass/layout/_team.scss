@@ -83,6 +83,11 @@
     height: 44px;
     margin: 0px auto;
     justify-content: space-between;
+
+    @media screen and (max-width: 479px) {
+      width: 100%;
+      height: auto;
+    }
   }
   &-social-svg {
     width: 20px;
@@ -98,6 +103,11 @@
     background-color: $white-background-color;
     border-radius: 50%;
     color: $icon-color;
+
+    @media screen and (max-width: 479px) {
+      width: 100%;
+      height: auto;
+    }
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
