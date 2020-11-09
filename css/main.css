@@ -28,12 +28,6 @@ body {
   margin-right: auto;
 }
 
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -860,7 +854,7 @@ body {
   display: block;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -868,23 +862,10 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .features-list {
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .features-items {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.features::before {
+.features-items::before {
   display: block;
   content: '';
-  width: 450px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-size: 70px;
@@ -894,62 +875,50 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .features-items {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .features::before {
+  .features-items {
     width: 354px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .features::before {
-    width: 270px;
+  .features-items:nth-last-child(2n) {
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .features:not(:last-child) {
+  .features-items {
+    width: 270px;
+  }
+  .features-items:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .features-title {
-  height: 16px;
-  text-align: center;
   margin-bottom: 10px;
+  width: 270px;
+  height: 16px;
   font-weight: 700;
   font-size: 14px;
+  line-height: 1, 143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 
-@media screen and (min-width: 768px) {
-  .features-title {
-    width: 270px;
-    text-align: left;
-  }
-}
-
 .features-description {
+  width: 270px;
   height: 75px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-@media screen and (min-width: 768px) {
-  .features-description {
-    width: 354px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features-description {
-    width: 270px;
-  }
 }
 
 .icon-antenna::before {
