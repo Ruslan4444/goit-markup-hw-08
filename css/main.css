@@ -697,6 +697,7 @@ body {
     position: fixed;
     width: 100%;
     background-color: #ffffff;
+    z-index: 1;
   }
 }
 
@@ -705,6 +706,7 @@ body {
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 1;
     background-color: #ffffff;
   }
 }
