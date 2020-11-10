@@ -568,12 +568,6 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 479px) {
-  .header .container {
-    position: fixed;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .navigation-menu {
     display: block;
