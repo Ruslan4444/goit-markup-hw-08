@@ -110,6 +110,20 @@
     border: 0px;
   }
 }
+.header .container {
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    width: 100%;
+    background-color: $white-background-color;
+  }
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    background-color: $white-background-color;
+  }
+}
 
 .menu-container {
   display: block;
