@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: Raleway, sans-serif;
+  color: #000000;
+
+  @include font(700, 26px, 1.19);
+
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.logo__text {
+  color: $accent-color;
+}

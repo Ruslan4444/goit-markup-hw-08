@@ -1,0 +1,31 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $secondary-bg-color;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0;
+
+  color: $primary-color;
+}
+.address__link.map {
+  color: $primary-color;
+}
+.address__link {
+  @include font(400, 14px, 1.71);
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

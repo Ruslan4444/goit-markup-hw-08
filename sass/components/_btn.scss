@@ -1,0 +1,15 @@
+.btn {
+  border: 0;
+  font-family: inherit;
+  background-color: $accent-color;
+  color: $primary-color;
+
+  @include font(700, 16px, 1.88, 0.06em);
+
+  cursor: pointer;
+  transition: background-color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $btn-hover-bgcolor;
+  }
+}

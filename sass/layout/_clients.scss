@@ -1,0 +1,36 @@
+.clients {
+  background-color: $primary-bg-color;
+}
+.clients__title {
+  margin-bottom: 50px;
+
+  color: $tittle-text-color;
+  @include font(700, 36px, 1.17);
+
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+}
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+
+  transition: border-color 250ms $timing-function, fill 250ms $timing-function;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}
