@@ -29,10 +29,7 @@
   text-transform: uppercase;
 }
 .advantages-list__text {
-  @include font(null, 14px, 1.25);
-
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(null, 14px, 1.71);
 }
 .thumb-icon {
   width: 100%;
