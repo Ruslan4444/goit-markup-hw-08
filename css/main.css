@@ -126,6 +126,12 @@ img {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .join-us {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
+}
 
 .join-us__title {
   margin-bottom: 20px;
@@ -169,6 +175,14 @@ img {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    text-align: left;
+    width: 570px;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 
@@ -216,7 +230,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe-form__input {
-    width: 358px;
+    display: inline;
+    width: 353px;
   }
 }
 .subscribe-form__input:hover, .subscribe-form__input:focus {
@@ -846,6 +861,11 @@ img {
 
 .address {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 .address__link.map {

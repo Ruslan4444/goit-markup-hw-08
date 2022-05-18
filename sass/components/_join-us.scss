@@ -2,10 +2,13 @@
   display: block;
   min-width: 206px;
   // margin-left: 70px;
-  // margin-right: 93px;
   margin-bottom: 60px;
   @media screen and (min-width: $tablet) {
     margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 .join-us__title {
