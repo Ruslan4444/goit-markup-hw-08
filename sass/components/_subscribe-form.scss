@@ -1,5 +1,5 @@
 .subscribe-form {
-  width: 570px;
+  width: 100%;
 }
 .subscribe-form__title {
   color: $primary-color;
@@ -12,6 +12,7 @@
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
+  width: 200px;
   padding: 10px 28px;
   border-image-width: 0px;
 
@@ -21,10 +22,11 @@
   margin-left: 10px;
 }
 .subscribe-form__input {
-  width: 353px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
 
   @include font(null, 16px, 1.25);
 
@@ -38,4 +40,7 @@
   &:focus {
     border: 1px solid $accent-color;
   }
+}
+.subscribe-form__svg {
+  margin-left: 10px;
 }

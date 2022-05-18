@@ -5,8 +5,13 @@
   background-color: $secondary-bg-color;
 }
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  // margin: 0px auto;
+  text-align: center;
+  // align-items: center;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer__logo {
   display: inline-block;
@@ -14,6 +19,9 @@
   padding: 0;
 
   color: $primary-color;
+}
+.address {
+  margin-bottom: 60px;
 }
 .address__link.map {
   color: $primary-color;

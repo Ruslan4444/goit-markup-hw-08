@@ -1,8 +1,9 @@
 .join-us {
   display: block;
   min-width: 206px;
-  margin-left: 70px;
-  margin-right: 93px;
+  // margin-left: 70px;
+  // margin-right: 93px;
+  margin-bottom: 60px;
 }
 .join-us__title {
   margin-bottom: 20px;
@@ -14,6 +15,7 @@
 }
 .join-list {
   display: flex;
+  justify-content: center;
 }
 .join-list__item:not(:last-child) {
   margin-right: 10px;

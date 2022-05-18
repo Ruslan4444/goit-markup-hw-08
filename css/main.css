@@ -119,8 +119,7 @@ img {
 .join-us {
   display: block;
   min-width: 206px;
-  margin-left: 70px;
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .join-us__title {
@@ -135,6 +134,7 @@ img {
 
 .join-list {
   display: flex;
+  justify-content: center;
 }
 
 .join-list__item:not(:last-child) {
@@ -157,7 +157,7 @@ img {
 }
 
 .subscribe-form {
-  width: 570px;
+  width: 100%;
 }
 
 .subscribe-form__title {
@@ -174,6 +174,7 @@ img {
   display: inline-flex;
   align-items: center;
   border-radius: 4px;
+  width: 200px;
   padding: 10px 28px;
   border-image-width: 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -184,10 +185,11 @@ img {
 }
 
 .subscribe-form__input {
-  width: 353px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -200,6 +202,10 @@ img {
 }
 .subscribe-form__input:hover, .subscribe-form__input:focus {
   border: 1px solid #2196f3;
+}
+
+.subscribe-form__svg {
+  margin-left: 10px;
 }
 
 .backdrop {
@@ -796,8 +802,13 @@ img {
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__logo {
@@ -805,6 +816,10 @@ img {
   margin-bottom: 20px;
   padding: 0;
   color: #ffffff;
+}
+
+.address {
+  margin-bottom: 60px;
 }
 
 .address__link.map {
