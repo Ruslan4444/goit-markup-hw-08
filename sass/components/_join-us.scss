@@ -4,6 +4,9 @@
   // margin-left: 70px;
   // margin-right: 93px;
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
 }
 .join-us__title {
   margin-bottom: 20px;
