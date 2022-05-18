@@ -1,5 +1,9 @@
 .work.section {
+  display: none;
   padding-top: 0px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .work__title {
   margin-bottom: 50px;
