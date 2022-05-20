@@ -6,20 +6,36 @@
   width: 100vw;
   z-index: 2;
   padding: 48px 40px;
-  display: none;
+  &.is-hidden {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
 }
 .menu-open-btn,
+.menu-close-btn {
+  display: inline-flex;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+
+  margin-left: auto;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
 .menu-close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
-  background-color: transparent;
-  border: none;
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  cursor: pointer;
 }
 .mob-menu-container {
   display: flex;
