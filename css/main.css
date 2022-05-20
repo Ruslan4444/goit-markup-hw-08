@@ -19,10 +19,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3,
@@ -118,6 +114,18 @@ img {
 
 .logo__text {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .join-us {

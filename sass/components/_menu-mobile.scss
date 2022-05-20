@@ -1,0 +1,10 @@
+.mob-menu {
+  @include tablet {
+    display: none;
+  }
+}
+.menu-open-btn {
+  @include tablet {
+    display: none;
+  }
+}
