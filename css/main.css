@@ -137,11 +137,10 @@ img {
 .menu-open-btn,
 .menu-close-btn {
   display: inline-flex;
-  top: 10px;
-  right: 15px;
   border: none;
   background-color: transparent;
   margin-left: auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .menu-open-btn:hover, .menu-open-btn:focus,
@@ -167,11 +166,7 @@ img {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  overflow: auto;
-}
-
-.menu-close-btn {
-  margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .mob-menu__link {
@@ -220,11 +215,13 @@ img {
 
 .mob-social-list {
   display: flex;
-  margin-bottom: 48px;
+  flex-wrap: wrap;
 }
 
 .mob-social-list__link {
+  display: flex;
   padding-right: 10px;
+  margin-bottom: 5px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
