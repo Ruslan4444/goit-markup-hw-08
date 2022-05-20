@@ -236,8 +236,31 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team1-desk-1x.jpg 1x,
+                    ./images/team/team1-desk-2x.jpg 2x
+                  "
+                  @media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-tab-1x.jpg 1x,
+                    ./images/team/team1-tab-2x.jpg 2x
+                  "
+                  @media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team1-mob-1x.jpg 1x,
+                    ./images/team/team1-mob-2x.jpg 2x
+                  "
+                  @media="(min-width: 320px)"
+                />
+              </picture>
               <img
-                src="./images/our-team/team1.jpg"
+                src="./images/team/team1-mob-1x.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
@@ -278,8 +301,31 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team2-desk-1x.jpg 1x,
+                    ./images/team/team2-desk-2x.jpg 2x
+                  "
+                  @media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-tab-1x.jpg 1x,
+                    ./images/team/team2-tab-2x.jpg 2x
+                  "
+                  @media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team2-mob-1x.jpg 1x,
+                    ./images/team/team2-mob-2x.jpg 2x
+                  "
+                  @media="(min-width: 320px)"
+                />
+              </picture>
               <img
-                src="./images/our-team/team2.jpg"
+                src="./images/team/team2-mob-1x.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
@@ -320,8 +366,31 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team3-desk-1x.jpg 1x,
+                    ./images/team/team3-desk-2x.jpg 2x
+                  "
+                  @media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-tab-1x.jpg 1x,
+                    ./images/team/team3-tab-2x.jpg 2x
+                  "
+                  @media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team3-mob-1x.jpg 1x,
+                    ./images/team/team3-mob-2x.jpg 2x
+                  "
+                  @media="(min-width: 320px)"
+                />
+              </picture>
               <img
-                src="./images/our-team/team3.jpg"
+                src="./images/team/team3-mob-1x.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
@@ -362,8 +431,31 @@
               </div>
             </li>
             <li class="team-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team4-desk-1x.jpg 1x,
+                    ./images/team/team4-desk-2x.jpg 2x
+                  "
+                  @media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-tab-1x.jpg 1x,
+                    ./images/team/team4-tab-2x.jpg 2x
+                  "
+                  @media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team4-mob-1x.jpg 1x,
+                    ./images/team/team4-mob-2x.jpg 2x
+                  "
+                  @media="(min-width: 320px)"
+                />
+              </picture>
               <img
-                src="./images/our-team/team4.jpg"
+                src="./images/team/team4-mob-1x.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
@@ -635,6 +727,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
