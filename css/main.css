@@ -1168,6 +1168,12 @@ img {
   }
 }
 
+.gallery-list__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .gallery-list__item {
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1193,6 +1199,7 @@ img {
 }
 
 .gallery-contant {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
