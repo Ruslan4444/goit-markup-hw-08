@@ -3,10 +3,10 @@
   min-width: 206px;
   // margin-left: 70px;
   margin-bottom: 60px;
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     margin-left: auto;
   }
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     margin-left: 70px;
     margin-bottom: 0;
   }

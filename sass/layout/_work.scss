@@ -1,6 +1,6 @@
 .work.section {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: block;
     padding-top: 0px;
   }

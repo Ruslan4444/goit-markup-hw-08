@@ -7,7 +7,7 @@
   color: $tittle-text-color;
 
   @include font(700, 28px, 1.18);
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     @include font(null, 33px, 1.17, null);
   }
 }
@@ -26,10 +26,10 @@
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc(100% / 3 - 30px);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc(100% / 6 - 30px);
   }
 }

@@ -1,11 +1,11 @@
 .subscribe-form {
   width: 100%;
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     text-align: left;
     width: 570px;
     margin-left: auto;
@@ -35,10 +35,10 @@
   display: block;
 
   width: 100%;
-  @media screen and (min-width: $tablet) {
+  @include tablet {
     width: 450px;
   }
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     display: inline;
     width: 353px;
   }

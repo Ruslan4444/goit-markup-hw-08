@@ -6,13 +6,13 @@
 }
 .footer__container {
   text-align: center;
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     display: flex;
     align-items: baseline;
   }
 }
 .footer__wrap {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     align-items: baseline;
   }
@@ -26,7 +26,7 @@
 }
 .address {
   margin-bottom: 60px;
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     margin-bottom: 0;
   }
 }

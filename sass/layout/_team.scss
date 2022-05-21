@@ -7,14 +7,14 @@
 
   color: $tittle-text-color;
   @include font(700, 28px, 1.18);
-  @media screen and (min-width: $desktop) {
+  @include desktop {
     @include font(null, 33px, 1.17, null);
   }
 }
 
 .team-list {
   margin-bottom: -30px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
@@ -31,11 +31,11 @@
   border-radius: 0px 0px 4px 4px;
   box-shadow: $team-item-shadow;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc(100% / 4 - 30px);
   }
 }
