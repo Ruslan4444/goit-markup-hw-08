@@ -119,14 +119,22 @@ img {
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #ffffff;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   padding: 48px 40px;
 }
 .mob-menu.is-hidden {
   display: none;
+}
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -138,8 +146,9 @@ img {
 .menu-close-btn {
   display: inline-flex;
   border: none;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
-  margin-left: auto;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -155,18 +164,14 @@ img {
   }
 }
 
+.menu-open-btn {
+  margin-left: auto;
+}
+
 .menu-close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
-}
-
-.mob-menu-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  overflow: hidden;
 }
 
 .mob-menu__link {
@@ -233,6 +238,10 @@ img {
 .mob-social-list__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .join-us {
@@ -1127,7 +1136,7 @@ img {
   margin-right: 8px;
 }
 
-.gallery-filter__item:nth-last-child(-n+3) {
+.gallery-filter__item {
   margin-bottom: 15px;
 }
 

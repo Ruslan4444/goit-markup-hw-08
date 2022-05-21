@@ -1,13 +1,21 @@
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: $primary-bg-color;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   padding: 48px 40px;
   &.is-hidden {
     display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
   }
   @include tablet {
     display: none;
@@ -17,9 +25,10 @@
 .menu-close-btn {
   display: inline-flex;
   border: none;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
 
-  margin-left: auto;
   transition: fill 250ms $timing-function;
   cursor: pointer;
   &:hover,
@@ -30,18 +39,14 @@
     display: none;
   }
 }
+.menu-open-btn {
+  margin-left: auto;
+}
 
 .menu-close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
-}
-.mob-menu-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  overflow: hidden;
 }
 
 .mob-menu__link {
@@ -113,4 +118,7 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     margin-right: 10px;
   }
+}
+.no-scroll {
+  overflow: hidden;
 }
