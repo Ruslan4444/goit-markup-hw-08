@@ -181,6 +181,9 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.mob-menu__link.current {
+  color: #2196f3;
+}
 .mob-menu__link:hover, .mob-menu__link:focus {
   color: #2196f3;
 }

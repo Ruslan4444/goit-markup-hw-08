@@ -52,11 +52,15 @@
 .mob-menu__link {
   @include font(500, 40px, 1.18, 00.02em);
   color: $tittle-text-color;
+  &.current {
+    color: $accent-color;
+  }
   &:hover,
   &:focus {
     color: $accent-color;
   }
 }
+
 .mob-menu__item {
   margin-bottom: 32px;
 }
