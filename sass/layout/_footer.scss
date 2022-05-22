@@ -16,6 +16,7 @@
   @include tablet {
     display: flex;
     align-items: baseline;
+    justify-content: center;
   }
 }
 .footer__logo {
