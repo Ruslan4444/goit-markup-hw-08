@@ -1193,6 +1193,10 @@ img {
   .gallery-list {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery-list {
     margin-right: -30px;
   }
 }
@@ -1209,7 +1213,7 @@ img {
 }
 @media screen and (min-width: 320px) {
   .gallery-list__item {
-    flex-basis: calc(100% - 30px);
+    flex-basis: 100%;
   }
 }
 @media screen and (min-width: 768px) {
