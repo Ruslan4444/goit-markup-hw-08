@@ -46,7 +46,7 @@
     flex-wrap: wrap;
   }
   @include tablet {
-    margin-right: -30px;
+    margin-left: -30px;
   }
 }
 .gallery-list__link {
@@ -61,7 +61,7 @@
   }
   @include tablet {
     flex-basis: calc(100% / 2 - 30px);
-    margin-right: 30px;
+    margin-left: 30px;
   }
   @include desktop {
     flex-basis: calc(100% / 3 - 30px);
