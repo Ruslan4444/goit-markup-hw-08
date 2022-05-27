@@ -432,6 +432,14 @@ img {
     width: 528px;
   }
 }
+@media (orientation: landscape) {
+  .modal {
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%);
+  }
+}
+
 .modal__close {
   position: absolute;
   top: 8px;
